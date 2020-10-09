@@ -20,25 +20,25 @@ var settings = {
 
 var paths = {
 	input: 'src/',
-	output: 'dist/',
+	output: 'docs/',
 	scripts: {
 		input: 'src/js/*',
 		polyfills: '.polyfill.js',
-		output: 'dist/js/'
+		output: 'docs/js/'
 	},
 	styles: {
 		input: 'src/sass/**/*.{scss,sass}',
-		output: 'dist/css/'
+		output: 'docs/css/'
 	},
 	svgs: {
 		input: 'src/svg/*.svg',
-		output: 'dist/svg/'
+		output: 'docs/svg/'
 	},
 	copy: {
 		input: 'src/copy/**/*',
-		output: 'dist/'
+		output: 'docs/'
 	},
-	reload: './dist/'
+	reload: './docs/'
 };
 
 
@@ -100,7 +100,7 @@ var cleanDist = function (done) {
 	// Make sure this feature is activated before running
 	if (!settings.clean) return done();
 
-	// Clean the dist folder
+	// Clean the docs folder
 	del.sync([
 		paths.output
 	]);
