@@ -1,0 +1,2 @@
+# daniella
+fashion retail
