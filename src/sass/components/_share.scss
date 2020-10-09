@@ -36,11 +36,50 @@
   padding-top: 5px;
   text-align: center;
   vertical-align: middle;
-  color: transparentize($black, 0.3);
-  border: 1px solid transparentize($black, 0.8);
-  outline: 1px solid transparent;
+  color: $white;
   outline-offset: -1px;
   transition: all 0.2s ease-in-out;
+
+  @include wide-tablet {
+    color: transparentize($black, 0.3);
+    border: 1px solid transparentize($black, 0.8);
+  }
+
+  &--vk {
+    background-color: $vk;
+    border: 1px solid $vk;
+    outline-color: $vk;
+
+    @include wide-tablet {
+      background-color: transparent;
+      border-color: transparentize($black, 0.8);
+      outline-color: transparent;
+    }
+  }
+
+  &--in {
+    background-color: $in;
+    border: 1px solid $in;
+    outline-color: $in;
+
+    @include wide-tablet {
+      background-color: transparent;
+      border-color: transparentize($black, 0.8);
+      outline-color: transparent;
+    }
+  }
+
+  &--fb {
+    background-color: $fb;
+    border: 1px solid $fb;
+    outline-color: $fb;
+
+    @include wide-tablet {
+      background-color: transparent;
+      border-color: transparentize($black, 0.8);
+      outline-color: transparent;
+    }
+  }
 
   & svg path {
     fill: currentColor;
@@ -50,22 +89,27 @@
     color: $white;
 
     &.share__link--vk {
-      background-color: $vk;
-      border-color: $vk;
-      outline-color: $vk;
+      @include wide-tablet {
+        background-color: $vk;
+        border-color: $vk;
+        outline-color: $vk;
+      }
     }
 
     &.share__link--in {
-      background-color: $in;
-      border-color: $in;
-      outline-color: $in;
+      @include wide-tablet {
+        background-color: $in;
+        border-color: $in;
+        outline-color: $in;
+      }
     }
 
     &.share__link--fb {
-      background-color: $fb;
-      border-color: $fb;
-      outline-color: $fb;
+      @include wide-tablet {
+        background-color: $fb;
+        border-color: $fb;
+        outline-color: $fb;
+      }
     }
-
   }
 }

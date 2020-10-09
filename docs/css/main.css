@@ -22,7 +22,7 @@ body {
   height: 100%;
   margin: 0;
   font-family: "Montserrat", sans-serif;
-  background-color: #e2e2e2;
+  background-color: #ffffff;
 }
 
 /* line 57, src/sass/components/_base.scss */
@@ -878,41 +878,101 @@ blockquote {
   padding-top: 5px;
   text-align: center;
   vertical-align: middle;
-  color: rgba(34, 34, 34, 0.7);
-  border: 1px solid rgba(34, 34, 34, 0.2);
-  outline: 1px solid transparent;
+  color: #ffffff;
   outline-offset: -1px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
-/* line 45, src/sass/components/_share.scss */
+@media (min-width: 1024px) {
+  /* line 32, src/sass/components/_share.scss */
+  .share__link {
+    color: rgba(34, 34, 34, 0.7);
+    border: 1px solid rgba(34, 34, 34, 0.2);
+  }
+}
+
+/* line 48, src/sass/components/_share.scss */
+.share__link--vk {
+  background-color: #4d76a1;
+  border: 1px solid #4d76a1;
+  outline-color: #4d76a1;
+}
+
+@media (min-width: 1024px) {
+  /* line 48, src/sass/components/_share.scss */
+  .share__link--vk {
+    background-color: transparent;
+    border-color: rgba(34, 34, 34, 0.2);
+    outline-color: transparent;
+  }
+}
+
+/* line 60, src/sass/components/_share.scss */
+.share__link--in {
+  background-color: #c50e50;
+  border: 1px solid #c50e50;
+  outline-color: #c50e50;
+}
+
+@media (min-width: 1024px) {
+  /* line 60, src/sass/components/_share.scss */
+  .share__link--in {
+    background-color: transparent;
+    border-color: rgba(34, 34, 34, 0.2);
+    outline-color: transparent;
+  }
+}
+
+/* line 72, src/sass/components/_share.scss */
+.share__link--fb {
+  background-color: #3b5998;
+  border: 1px solid #3b5998;
+  outline-color: #3b5998;
+}
+
+@media (min-width: 1024px) {
+  /* line 72, src/sass/components/_share.scss */
+  .share__link--fb {
+    background-color: transparent;
+    border-color: rgba(34, 34, 34, 0.2);
+    outline-color: transparent;
+  }
+}
+
+/* line 84, src/sass/components/_share.scss */
 .share__link svg path {
   fill: currentColor;
 }
 
-/* line 49, src/sass/components/_share.scss */
+/* line 88, src/sass/components/_share.scss */
 .share__link:hover {
   color: #ffffff;
 }
 
-/* line 52, src/sass/components/_share.scss */
-.share__link:hover.share__link--vk {
-  background-color: #4d76a1;
-  border-color: #4d76a1;
-  outline-color: #4d76a1;
+@media (min-width: 1024px) {
+  /* line 91, src/sass/components/_share.scss */
+  .share__link:hover.share__link--vk {
+    background-color: #4d76a1;
+    border-color: #4d76a1;
+    outline-color: #4d76a1;
+  }
 }
 
-/* line 58, src/sass/components/_share.scss */
-.share__link:hover.share__link--in {
-  background-color: #c50e50;
-  border-color: #c50e50;
-  outline-color: #c50e50;
+@media (min-width: 1024px) {
+  /* line 99, src/sass/components/_share.scss */
+  .share__link:hover.share__link--in {
+    background-color: #c50e50;
+    border-color: #c50e50;
+    outline-color: #c50e50;
+  }
 }
 
-/* line 64, src/sass/components/_share.scss */
-.share__link:hover.share__link--fb {
-  background-color: #3b5998;
-  border-color: #3b5998;
-  outline-color: #3b5998;
+@media (min-width: 1024px) {
+  /* line 107, src/sass/components/_share.scss */
+  .share__link:hover.share__link--fb {
+    background-color: #3b5998;
+    border-color: #3b5998;
+    outline-color: #3b5998;
+  }
 }
