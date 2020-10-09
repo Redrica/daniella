@@ -682,14 +682,15 @@ blockquote {
   transition: border-color 0.1s ease-in-out;
   -webkit-box-shadow: none;
           box-shadow: none;
+  border-radius: 0;
 }
 
-/* line 10, src/sass/components/_input.scss */
+/* line 11, src/sass/components/_input.scss */
 .lp-input:hover {
   border-color: rgba(34, 34, 34, 0.5);
 }
 
-/* line 14, src/sass/components/_input.scss */
+/* line 15, src/sass/components/_input.scss */
 .lp-input:focus {
   border-color: #222222;
   outline: none;
