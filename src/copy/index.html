@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/main.min.css">
+    <title>Daniella</title>
+</head>
+<body>
+    <div class="lp-page" style="background-image: url('img/page_background.webp')">
+        <header class="lp-page__header">
+            <a class="lp-page__logo-link" href="/">
+                <img src="img/logo.svg" width="134" height="45" alt="Daniella логотип">
+            </a>
+        </header>
+
+        <main class="lp-page__main" role="main">
+            <div class="lp-teaser lp-page__teaser">
+<!--                При успешном запросе повесить на lp-teaser__start класс hidden-->
+                <div class="lp-teaser__start">
+                    <h1 class="lp-teaser__title title">Скоро открытие!</h1>
+                    <p class="lp-teaser__text text">Оставьте свой Email и мы расскажем, когда это произойдет!&nbsp;:)</p>
+                    <form class="lp-teaser__form lp-form" method="post" action="" id="">
+                        <div class="lp-form__row">
+                            <input class="lp-form__input lp-input" type="email" name="email"
+                                   placeholder="Ваш Email" aria-label="Ваш Email">
+                            <button class="lp-form__button lp-button" type="submit">Уведомить меня</button>
+                        </div>
+                        <p class="lp-form__agreement checkbox">
+                            <input class="checkbox__input visually-hidden" id="agreement" type="checkbox" value="yes">
+                            <label class="checkbox__label" for="agreement">Я согласен(-на) с</label>
+                            <a class="link" href="https://daniella.shop/politika-konfidencialnosti/">условиями передачи
+                                данных</a>
+                        </p>
+                    </form>
+                </div>
+<!--                При успешном запросе снять с lp-teaser__success класс hidden-->
+                <div class="lp-teaser__success hidden">
+<!--                    Если новый email-->
+                    <p class="title">До встречи!</p>
+<!--                    Если email уже есть в базе-->
+<!--                    <p class="subtitle">Вы уже подписаны на этот анонс.</p>-->
+                </div>
+            </div>
+            <div class="lp-page__share share">
+                <p class="share__title subtitle">Поделиться в соцсетях</p>
+
+                <div class="share__links">
+                    <a class="share__link share__link--vk" href="https://vk.com/daniella.yalta" target="_blank">
+                        <svg width="22" height="13" viewBox="0 0 22 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M10.3956 12.0173H11.6514C11.6514 12.0173 12.0307 11.9757 12.2244 11.7669C12.4026 11.5752 12.3969 11.2153 12.3969 11.2153C12.3969 11.2153 12.3724 9.53023 13.1545 9.28209C13.9254 9.03766 14.9154 10.9107 15.9647 11.6308C16.7582 12.1759 17.3611 12.0564 17.3611 12.0564L20.1668 12.0173C20.1668 12.0173 21.6345 11.9269 20.9386 10.7729C20.8815 10.6785 20.5333 9.91926 18.8525 8.35913C17.0933 6.72628 17.3289 6.99039 19.448 4.1659C20.7386 2.44577 21.2546 1.3956 21.0934 0.945819C20.9397 0.517426 19.9905 0.630657 19.9905 0.630657L16.8315 0.650337C16.8315 0.650337 16.5973 0.618392 16.4236 0.72221C16.2539 0.824032 16.1447 1.06133 16.1447 1.06133C16.1447 1.06133 15.6447 2.39243 14.9778 3.52445C13.5712 5.91313 13.0087 6.03919 12.7788 5.89088C12.2441 5.5452 12.3775 4.50217 12.3775 3.76118C12.3775 1.44637 12.7286 0.481205 11.6939 0.231356C11.3505 0.148358 11.0978 0.0935971 10.2196 0.0847554C9.09243 0.0730616 8.13839 0.0881776 7.59819 0.352857C7.23882 0.528835 6.96159 0.921006 7.13044 0.943538C7.33921 0.971489 7.8121 1.07103 8.0628 1.41243C8.38652 1.8528 8.37512 2.84193 8.37512 2.84193C8.37512 2.84193 8.56108 5.56688 7.94073 5.90543C7.51491 6.13759 6.93079 5.66356 5.67669 3.4965C5.0341 2.38644 4.54895 1.15945 4.54895 1.15945C4.54895 1.15945 4.4554 0.930132 4.28855 0.80749C4.08605 0.658893 3.80312 0.611548 3.80312 0.611548L0.801227 0.631227C0.801227 0.631227 0.350587 0.643777 0.185162 0.83972C0.0379912 1.01399 0.173468 1.3745 0.173468 1.3745C0.173468 1.3745 2.52364 6.87288 5.1847 9.64374C7.62471 12.1842 10.3956 12.0173 10.3956 12.0173Z"
+                                  fill="#ffffff"/>
+                        </svg>
+                    </a>
+                    <a class="share__link share__link--in" href="https://www.instagram.com/daniella_yalta/"
+                       target="_blank">
+                        <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 198.1 198"
+                             xml:space="preserve">
+                                    <path d="M58.3,0C26.3,0,0,26.2,0,58.2v81.6c0,32,26.2,58.2,58.2,58.2h81.6c32,0,58.2-26.2,58.2-58.2V58.2c0-32-26.2-58.2-58.2-58.2
+                                        H58.3z M58.3,18h81.6c22.3,0,40.2,18,40.2,40.2v81.6c0,22.3-18,40.2-40.2,40.2H58.3C36,180,18,162.1,18,139.8V58.2
+                                        C18,36,36,18,58.3,18z M152.2,37.7c-4.5,0-8.2,3.6-8.2,8.2s3.6,8.2,8.2,8.2s8.2-3.6,8.2-8.2S156.7,37.7,152.2,37.7z M99,45
+                                        c-29.7,0-54,24.3-54,54s24.3,54,54,54s54-24.3,54-54S128.7,45,99,45z M99,63c20,0,36,16,36,36s-16,36-36,36s-36-16-36-36
+                                        S79,63,99,63z"/>
+                            </svg>
+                    </a>
+                    <a class="share__link share__link--fb"
+                       href="https://www.facebook.com/855546327817041/posts/2970271013011218/" target="_blank">
+                        <svg width="11" height="18" viewBox="0 0 10 17" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.94802 4.015H9.01004V0.968994H6.58608V0.979979C3.64904 1.084 3.04709 2.73498 2.99403 4.46899H2.98799V5.99002H0.988037V8.97298H2.98799V16.9689H6.00203V8.97298H8.47103L8.94797 5.99002H6.00302V5.07105C6.00302 4.48503 6.39297 4.015 6.94802 4.015Z"
+                                  fill="#ffffff"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

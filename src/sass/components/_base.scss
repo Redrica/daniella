@@ -1,0 +1,174 @@
+/**
+ * @section Base Styles
+ */
+$white: #ffffff;
+$lightGray: #e2e2e2;
+$black: #222222;
+$wideMobile: 640px;
+$tablet: 768px;
+$wideTablet: 1024px;
+$desktop: 1367px;
+
+$vk: #4d76a1;
+$fb: #3b5998;
+$in: #c50e50;
+
+@mixin wide-mobile {
+	@media (min-width: #{$wideMobile}) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media (min-width: #{$tablet}) {
+		@content;
+	}
+}
+
+@mixin wide-tablet {
+	@media (min-width: #{$wideTablet}) {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@media (min-width: #{$desktop}) {
+		@content;
+	}
+}
+
+html {
+	box-sizing: border-box;
+	height: 100%;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+body {
+	min-width: 320px;
+	height: 100%;
+	margin: 0;
+	font-family: "Montserrat", sans-serif;
+	background-color: $lightGray;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+.lp-page {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	padding: 30px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.lp-page__logo-link {
+	display: block;
+	max-width: 100px;
+	margin: 0 auto;
+}
+
+.lp-page__main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: auto 0;
+}
+
+.lp-page__teaser {
+	width: 100%;
+	max-width: 470px;
+
+	@include wide-mobile {
+		max-width: 500px;
+	}
+}
+
+.lp-page__share {
+	width: 100%;
+	max-width: 470px;
+	margin-top: 15px;
+
+	@include wide-mobile {
+		max-width: 500px;
+	}
+}
+
+.title {
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+}
+
+.subtitle {
+	font-size: 13px;
+	line-height: 22px;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+}
+
+.text {
+	font-family: "Nunito Sans", sans-serif;
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.link {
+	position: relative;
+	text-decoration: none;
+	font-weight: 600;
+	color: #222222;
+
+	&::before {
+		position: absolute;
+		left: 0;
+		bottom: -1px;
+		content: '';
+		display: block;
+		width: 100%;
+		height: 1px;
+		background-color: $black;
+		transform-origin: right center;
+		transform: scale(0, 1);
+		transition: transform 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+	}
+
+	&:hover::before {
+		transform-origin: left center;
+		transform: scale(1, 1);
+	}
+}
+
+.hidden {
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden,
+input[type="file"].visually-hidden {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	white-space: nowrap;
+	border: 0;
+	clip-path: inset(100%);
+}

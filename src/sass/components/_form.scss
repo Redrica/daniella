@@ -1,0 +1,29 @@
+.lp-form__row {
+
+  @include wide-mobile {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.lp-form__input {
+  width: 100%;
+  margin-bottom: 15px;
+
+  @include wide-mobile {
+    margin-bottom: 0;
+    margin-right: 15px;
+  }
+}
+
+.lp-form__button {
+  width: 100%;
+}
+
+.lp-form__agreement {
+  margin: 15px 0 0;
+
+  @include wide-mobile {
+    margin: 20px 0 0;
+  }
+}

@@ -1,0 +1,71 @@
+.share {
+  padding: 22px 25px;
+  background-color: $white;
+
+  @include wide-mobile {
+    display: flex;
+  }
+}
+
+.share__title {
+  margin: 0;
+  text-align: center;
+
+  @include wide-mobile {
+    margin-right: 30px;
+    text-align: left;
+  }
+}
+
+.share__links {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+
+  @include wide-mobile {
+    width: auto;
+    margin-top: 0;
+  }
+}
+
+.share__link {
+  display: table-cell;
+  width: 60px;
+  height: 45px;
+  padding-top: 5px;
+  text-align: center;
+  vertical-align: middle;
+  color: transparentize($black, 0.3);
+  border: 1px solid transparentize($black, 0.8);
+  outline: 1px solid transparent;
+  outline-offset: -1px;
+  transition: all 0.2s ease-in-out;
+
+  & svg path {
+    fill: currentColor;
+  }
+
+  &:hover {
+    color: $white;
+
+    &.share__link--vk {
+      background-color: $vk;
+      border-color: $vk;
+      outline-color: $vk;
+    }
+
+    &.share__link--in {
+      background-color: $in;
+      border-color: $in;
+      outline-color: $in;
+    }
+
+    &.share__link--fb {
+      background-color: $fb;
+      border-color: $fb;
+      outline-color: $fb;
+    }
+
+  }
+}

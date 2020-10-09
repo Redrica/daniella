@@ -1,0 +1,17 @@
+.lp-input {
+  max-width: 100%;
+  padding: 10px 14px;
+  font-size: 13px;
+  background-color: transparent;
+  border: 1px solid transparentize($black, 0.8);
+  transition: border-color 0.1s ease-in-out;
+
+  &:hover {
+    border-color: transparentize($black, 0.5);
+  }
+
+  &:focus {
+    border-color: $black;
+    outline: none;
+  }
+}

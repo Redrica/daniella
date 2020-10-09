@@ -1,0 +1,36 @@
+.lp-teaser {
+  position: relative;
+  padding: 24px;
+  background-color: $white;
+
+  @include wide-mobile {
+    padding: 45px 60px 50px;
+  }
+}
+
+.lp-teaser__title {
+  margin: 0 0 12px;
+  text-align: center;
+}
+
+.lp-teaser__text {
+  text-align: center;
+}
+
+.lp-teaser__form {
+  margin-top: 28px;
+}
+
+.lp-teaser__success {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+
+  & .title, .subtitle {
+    margin: auto;
+    text-align: center;
+  }
+}
