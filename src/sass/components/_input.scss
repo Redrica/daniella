@@ -5,6 +5,7 @@
   background-color: transparent;
   border: 1px solid transparentize($black, 0.8);
   transition: border-color 0.1s ease-in-out;
+  box-shadow: none;
 
   &:hover {
     border-color: transparentize($black, 0.5);
