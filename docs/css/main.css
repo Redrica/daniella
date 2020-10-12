@@ -54,11 +54,18 @@ img {
 /* line 74, src/sass/components/_base.scss */
 .lp-page__logo-link {
   display: block;
-  max-width: 100px;
   margin: 0 auto;
 }
 
-/* line 80, src/sass/components/_base.scss */
+@media (min-width: 768px) {
+  /* line 78, src/sass/components/_base.scss */
+  .lp-page__logo-link img {
+    width: 235px;
+    height: 79px;
+  }
+}
+
+/* line 87, src/sass/components/_base.scss */
 .lp-page__main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -76,20 +83,20 @@ img {
   margin: auto 0;
 }
 
-/* line 88, src/sass/components/_base.scss */
+/* line 95, src/sass/components/_base.scss */
 .lp-page__teaser {
   width: 100%;
   max-width: 470px;
 }
 
 @media (min-width: 640px) {
-  /* line 88, src/sass/components/_base.scss */
+  /* line 95, src/sass/components/_base.scss */
   .lp-page__teaser {
     max-width: 500px;
   }
 }
 
-/* line 97, src/sass/components/_base.scss */
+/* line 104, src/sass/components/_base.scss */
 .lp-page__share {
   width: 100%;
   max-width: 470px;
@@ -97,13 +104,13 @@ img {
 }
 
 @media (min-width: 640px) {
-  /* line 97, src/sass/components/_base.scss */
+  /* line 104, src/sass/components/_base.scss */
   .lp-page__share {
     max-width: 500px;
   }
 }
 
-/* line 107, src/sass/components/_base.scss */
+/* line 114, src/sass/components/_base.scss */
 .title {
   font-size: 18px;
   line-height: 30px;
@@ -112,7 +119,7 @@ img {
   letter-spacing: 0.2em;
 }
 
-/* line 115, src/sass/components/_base.scss */
+/* line 122, src/sass/components/_base.scss */
 .subtitle {
   font-size: 13px;
   line-height: 22px;
@@ -120,14 +127,14 @@ img {
   letter-spacing: 0.2em;
 }
 
-/* line 122, src/sass/components/_base.scss */
+/* line 129, src/sass/components/_base.scss */
 .text {
   font-family: "Nunito Sans", sans-serif;
   font-size: 12px;
   line-height: 18px;
 }
 
-/* line 128, src/sass/components/_base.scss */
+/* line 135, src/sass/components/_base.scss */
 .link {
   position: relative;
   text-decoration: none;
@@ -135,7 +142,7 @@ img {
   color: #222222;
 }
 
-/* line 134, src/sass/components/_base.scss */
+/* line 141, src/sass/components/_base.scss */
 .link::before {
   position: absolute;
   left: 0;
@@ -155,7 +162,7 @@ img {
   transition: transform 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86), -webkit-transform 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
-/* line 148, src/sass/components/_base.scss */
+/* line 155, src/sass/components/_base.scss */
 .link:hover::before {
   -webkit-transform-origin: left center;
           transform-origin: left center;
@@ -163,14 +170,14 @@ img {
           transform: scale(1, 1);
 }
 
-/* line 154, src/sass/components/_base.scss */
+/* line 161, src/sass/components/_base.scss */
 .hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
 }
 
-/* line 160, src/sass/components/_base.scss */
+/* line 167, src/sass/components/_base.scss */
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden,

@@ -73,8 +73,15 @@ img {
 
 .lp-page__logo-link {
 	display: block;
-	max-width: 100px;
 	margin: 0 auto;
+
+	& img {
+		@include tablet {
+			width: 235px;
+			height: 79px;
+
+		}
+	}
 }
 
 .lp-page__main {
